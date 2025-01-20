@@ -7,33 +7,33 @@ import com.felipe.workshopmongo.domain.User;
 public class UserDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	private String Id;
-	private String Name;
+	private String id;
+	private String name;
 	private String email;
 	
 	public UserDTO() {
 	}
 	
 	public UserDTO(User obj) {
-		Id = obj.getId();
-		Name = obj.getName();
+		id = obj.getId();
+		name = obj.getName();
 		email = obj.getEmail();
 	}
 
 	public String getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(String id) {
-		Id = id;
+		this.id = id;
 	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
 	public String getEmail() {
@@ -43,5 +43,5 @@ public class UserDTO implements Serializable{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
 }
